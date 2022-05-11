@@ -5,7 +5,7 @@ sidebar_position: 3
 # Create your validator
 You need to add your `wallet key` using `mnemonic` or create a new key and tranfer `uaura` to its address
 ```bash
- aurad keys add <key_name> 
+ aurad keys add <refi> 
 ```
 
 Your `auravalconspub` can be used to create a new validator by staking tokens. You can find your validator pubkey by running:
@@ -25,7 +25,7 @@ $ aurad tx staking create-validator \
   --min-self-delegation="1000000" \
   --gas="auto" \
   --gas-prices=<choose gas price> \
-  --from=<key_name>
+  --from=<refi>
 ```
 
 You can confirm that you are in the validator set by using a third party explorer or `aurad cli`
